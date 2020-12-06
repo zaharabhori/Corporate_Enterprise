@@ -1,0 +1,224 @@
+body,html{
+  width: 100%;
+  height:100%;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+nav.navbar{
+  border: 0px;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 2;
+  height: 100px;
+}
+
+
+
+.navbar-brand {
+  position: absolute;
+  margin-top: -15px;
+}
+
+.navbar-brand img{
+   width: 170px;
+   height: 130px;
+}
+
+nav li{
+  top: 35px;
+  height: 50px;
+}
+
+
+#menu{
+  border: 0px;
+  width: 100%;
+}
+
+nav li a{
+  color: #a47d20 !important;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 30px;
+}
+
+
+
+.landing{
+  position: relative;
+  height: 65%;
+  background-image: url("images/landing4.jpg");
+  background-size:100% 100%;
+  z-index: -1;
+
+
+}
+.landing:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.landing h1{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 60px;
+  z-index: 1;
+  position: relative;
+  color: white;
+  top: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.card_div{
+  position: relative;
+  top: -70px;
+  max-width: 49%;
+}
+
+
+
+.card{
+  padding-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.card h5{
+
+  font-family: 'Cinzel', serif;
+  margin-top: -10px;
+  text-align: left;
+  margin-left: 5px;
+  height: 30px;
+}
+
+.card p{
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+.card button{
+  background-color: #73770b;
+  border-radius: 20px;
+  color: white;
+  width: 65%;
+  height: 35px;
+  margin: 8px;
+}
+
+.suggestion{
+  position: relative;
+}
+
+
+
+.ping{
+  margin-left: -100px;
+  margin-top: 60px;
+}
+
+.ping h1{
+  color: #a47d20;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.ping p{
+  color: white;
+  font-size: 20px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.ping button{
+  background-color: #a47d20;
+  border: 1px solid #a47d20;
+  color: white;
+  height: 40px;
+  width: 150px;
+  font-size: 20px;
+  border-radius: 10px;
+
+}
+
+
+.division{
+  position: relative;
+  margin-top: -220px;
+  z-index: -1;
+  background-color: #373942;
+  height: 150px;
+  text-align: left;
+  width: 60%;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+
+}
+
+
+.filler h4{
+  margin-top: 50px;
+  font-size: 30px;
+  color: #ab8426;
+  text-align: center;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.aboutus{
+  position: relative;
+  max-width: 90%;
+  margin-top: 80px;
+  z-index: -1;
+}
+
+.aboutus h1{
+  margin-top: 10%;
+  font-size: 50px;
+  color: #a47d20;
+  font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+.aboutus p{
+  color: white;
+  font-size: 20px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.image1{
+  width: 250px;
+  height: 250px;
+  margin-top: 160px;
+}
+
+.image2{
+  width: 250px;
+  height: 250px;
+}
+
+.frame{
+  width: 250px;
+  height: 350px;
+  border: 2px solid #a47d20;
+  margin-left: 100px;
+  margin-top: -300px;
+}
+.filler{
+  position: relative;
+  height: 150px;
+  background-image: url("images/landing4.jpg");
+  background-size:100% 200%;
+  background-position: center;
+  z-index: -1;
+  margin-top: 40px;
+}
+
+.filler:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
