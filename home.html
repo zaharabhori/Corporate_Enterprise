@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -19,15 +20,15 @@
   </head>
 
   <body style="background-color:#13141b;">
-
-  <nav class="navbar navbar-default">
+<div class="landing" id="landing">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button id="menu_bttn" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu" style="border: transparent;">
           <svg style="margin-top:15px;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="30" height="30"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02608" y2="82.02608" gradientUnits="userSpaceOnUse" id="color-1_MmupZtPbnw66_gr1"><stop offset="0.237" stop-color="#debb04"></stop><stop offset="0.85" stop-color="#ae9302"></stop></linearGradient><linearGradient x1="43.2365" y1="43.2365" x2="125.02608" y2="125.02608" gradientUnits="userSpaceOnUse" id="color-2_MmupZtPbnw66_gr2"><stop offset="0.237" stop-color="#debb04"></stop><stop offset="0.85" stop-color="#ae9302"></stop></linearGradient><linearGradient x1="43.2365" y1="86.2365" x2="125.02608" y2="168.02608" gradientUnits="userSpaceOnUse" id="color-3_MmupZtPbnw66_gr3"><stop offset="0.237" stop-color="#debb04"></stop><stop offset="0.85" stop-color="#ae9302"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M154.08333,53.75h-136.16667c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667v-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667h136.16667c3.94167,0 7.16667,3.225 7.16667,7.16667v7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667z" fill="url(#color-1_MmupZtPbnw66_gr1)"></path><path d="M154.08333,96.75h-136.16667c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667v-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667h136.16667c3.94167,0 7.16667,3.225 7.16667,7.16667v7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667z" fill="url(#color-2_MmupZtPbnw66_gr2)"></path><path d="M154.08333,139.75h-136.16667c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667v-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667h136.16667c3.94167,0 7.16667,3.225 7.16667,7.16667v7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667z" fill="url(#color-3_MmupZtPbnw66_gr3)"></path></g></g></svg>
+          width="30" height="30"
+          viewBox="0 0 172 172"
+          style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02608" y2="82.02608" gradientUnits="userSpaceOnUse" id="color-1_MmupZtPbnw66_gr1"><stop offset="0.237" stop-color="#debb04"></stop><stop offset="0.85" stop-color="#ae9302"></stop></linearGradient><linearGradient x1="43.2365" y1="43.2365" x2="125.02608" y2="125.02608" gradientUnits="userSpaceOnUse" id="color-2_MmupZtPbnw66_gr2"><stop offset="0.237" stop-color="#debb04"></stop><stop offset="0.85" stop-color="#ae9302"></stop></linearGradient><linearGradient x1="43.2365" y1="86.2365" x2="125.02608" y2="168.02608" gradientUnits="userSpaceOnUse" id="color-3_MmupZtPbnw66_gr3"><stop offset="0.237" stop-color="#debb04"></stop><stop offset="0.85" stop-color="#ae9302"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M154.08333,53.75h-136.16667c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667v-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667h136.16667c3.94167,0 7.16667,3.225 7.16667,7.16667v7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667z" fill="url(#color-1_MmupZtPbnw66_gr1)"></path><path d="M154.08333,96.75h-136.16667c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667v-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667h136.16667c3.94167,0 7.16667,3.225 7.16667,7.16667v7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667z" fill="url(#color-2_MmupZtPbnw66_gr2)"></path><path d="M154.08333,139.75h-136.16667c-3.94167,0 -7.16667,-3.225 -7.16667,-7.16667v-7.16667c0,-3.94167 3.225,-7.16667 7.16667,-7.16667h136.16667c3.94167,0 7.16667,3.225 7.16667,7.16667v7.16667c0,3.94167 -3.225,7.16667 -7.16667,7.16667z" fill="url(#color-3_MmupZtPbnw66_gr3)"></path></g></g></svg>
         </button>
         <div class="navbar-brand navbar-brand-centered"><a href="{% url 'home' %}" style="text-decoration: none;color: transparent;">"<img src="{% static 'images/logo2-min.png' %}" width="220px" height="160px" alt="logo"></a></div>
 
@@ -36,10 +37,9 @@ style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02
 
       <div class="collapse navbar-collapse" id="menu">
         <ul class="nav navbar-nav navbar-right">
-          <li id="item1"><a href="{% url 'home' %}">Home</a></li>
-          <li id="item2"><a href="{% url 'aboutus' %}">Our journey</a></li>
-          <li id="item3"><a href="{% url 'menu' %}">Menu</a></li>
-          <li id="item4"><a href="{% url 'gallery' %}">Gallery</a></li>
+          <li id="item1"><a href="#landing">Home</a></li>
+          <li id="item2"><a href="#aboutus">About us</a></li>
+          <li id="item4"><a href="#projects">Gallery</a></li>
 
 
         </ul>
@@ -48,7 +48,7 @@ style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02
     </div>
   </nav>
 
-<div class="landing">
+
       <h1 class="text-center">CORPORATE  ENTERPRISES</h1>
     </div>
 
@@ -57,7 +57,7 @@ style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02
       <div class="row card_holder">
 
         <div class="colmn col-md-4 col-sm-4 col-xs-12">
-            <div class="card" style="background-color:#1d1e27">
+            <div class="card card1" style="background-color:#1d1e27">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
               width="60" height="100"
               viewBox="0 0 172 172"
@@ -65,7 +65,7 @@ style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02
             <div class="card-body text-center">
               <h5 class="card-title" style="color: #a47d20;">PROPERTY MANAGEMENT</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              <svg id="arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
               width="40" height="40"
               viewBox="0 0 172 172"
               style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M2.65391,86c0,-46.02344 37.32266,-83.34609 83.34609,-83.34609c46.02344,0 83.34609,37.32266 83.34609,83.34609c0,46.02344 -37.32266,83.34609 -83.34609,83.34609c-46.02344,0 -83.34609,-37.32266 -83.34609,-83.34609z" fill="#a47d20"></path><path d="M148.51797,82.20391c-9.50703,-9.50703 -19.01406,-19.01406 -28.52109,-28.52109c-3.02344,-3.02344 -8.39844,-0.80625 -8.39844,3.46016c0,6.21484 0,12.46328 0,18.67813c-26.60625,0 -53.24609,0 -79.85234,0c-12.73203,0 -12.86641,19.75312 -0.13438,19.75312c26.67344,0 53.34688,0 80.02031,0c0,6.18125 0,12.3625 0,18.54375c0,0.20156 0.03359,0.36953 0.03359,0.57109c0.16797,2.04922 1.41094,3.35938 2.95625,3.96406c1.54531,0.77266 3.39297,0.73906 5.03906,-0.60469c0.20156,-0.16797 0.40313,-0.33594 0.60469,-0.5375c9.43984,-9.43984 18.87969,-18.87969 28.31953,-28.31953c1.88125,-1.91484 1.81406,-5.07266 -0.06719,-6.9875z" fill="#ffffff"></path></g></g></svg>
@@ -74,7 +74,7 @@ style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02
       </div>
 
         <div class="colmn col-md-4 col-sm-4 col-xs-12">
-            <div class="card" style="background-color:#292a31">
+            <div class="card card2" style="background-color:#292a31">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
               width="60" height="100"
               viewBox="0 0 172 172"
@@ -92,7 +92,7 @@ style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02
 
 
       <div class="colmn col-md-4 col-sm-4 col-xs-12">
-          <div class="card" style="background-color:#42434a">
+          <div class="card card3" style="background-color:#42434a">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="60" height="100"
             viewBox="0 0 172 172"
@@ -130,7 +130,7 @@ style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02
 
 
 
-    <div class="container aboutus">
+    <div class="container aboutus" id="aboutus">
 
 
     <div class="row text-center">
@@ -172,10 +172,77 @@ style=" fill:#000000;"><defs><linearGradient x1="43.2365" y1="0.2365" x2="125.02
       </div>
     </div>
 
-    <div class="hello" style="margin-top:100px;">
+<div class="container projects text-center" id="projects">
+
+
+  <div class="row text-center">
+  <div class="column">
+    <div class="title_div">
+      <h1>Our<br> Projects</h1>
+    </div>
+    <img src="images/ar.jpg">
+    <img src="images/ar2.jpg">
+    <img src="images/ar3.jpg">
+
+  </div>
+  <div class="column">
+    <img src="images/landing3.jpg">
+    <img src="images/landing4.jpg">
+    <img src="images/ar4.jpg">
+    <img src="images/landing3.jpg">
+  </div>
+  <div class="column">
+    <img src="images/architect.jpg">
+    <img src="images/landing.jpg">
+    <img src="images/landing2.jpg">
+    <img src="images/landing3.jpg">
+  </div>
+</div>
+</div>
+
+<div class="row footer">
+  <div class="col-md-4 col-sm-12 text-center">
+      <p class="footerheading">Contact us on </p>
+      <a href="tel: +44 7932547786">+44 7932547786</a>
 
     </div>
+    <div class="col-md-4 col-sm-12 text-center">
+      <p class="footerheading">Follow us on </p>
+      <a href="https://www.instagram.com/crumbcoat_uk/"><i class="fab fa-instagram fa-lg"></i> </a>
+      <a href="https://m.facebook.com/crumbcoat_in-115230163204962/?__tn__=C-R"><i class="fab fa-facebook-square fa-lg"></i></a>
+      <i class="fa fa-whatsapp" aria-hidden="true"></i></i>
 
+    </div>
+    <div class="col-md-4 col-sm-12 text-center">
+
+      <p class="footerheading">Pune, Kondhwa</p>
+      <i class="fas fa-map-marker-alt fa-2x"></i>
+    </div>
+
+    <div id="copyright" class="col-xs-12 col-md-12 copyright text-center">
+      <p>Website designed and developed by Zaura</p>
+    </div>
+</div>
+
+    <script>
+
+    $('body').scroll(function(){
+      console.log("hi");
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 300);
+    });
+
+    $('.card').hover(function(){
+      console.log("hello");
+      $(this).addClass('big');
+      $(this).parent().siblings().children().addClass('small');},
+      function(){
+
+        $(this).removeClass('big');
+        $(this).parent().siblings().children().removeClass('small');
+      }
+    )
+
+    </script>
 
 
   </body>
