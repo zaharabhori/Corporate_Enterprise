@@ -86,12 +86,17 @@ nav li a{
 }
 
 
+.card_holder{
+  display: flex;
+  justify-content: space-between;
 
+}
 .card{
   padding-bottom: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 1px solid #a47d20;
-
+  margin:  10px;
+  height: 350px;
 }
 
 .card h5{
@@ -101,6 +106,7 @@ nav li a{
   text-align: left;
   margin-left: 5px;
   height: 30px;
+  font-size: 15px;
 }
 
 .card p{
@@ -318,14 +324,36 @@ nav li a{
   overflow: hidden;
 }
 
+
+.cardz{
+  display: none;
+}
+.card1{
+  background-color:#1d1e27;
+}
+.card2{
+  background-color:#292a31;
+}
+.card3{
+  background-color:#42434a;
+}
+
+.cardz1{
+  background-image: url("images/ar2.jpg");
+}
+.cardz2{
+  background-image: url("images/ar3.jpg");
+}
+.cardz3{
+  background-image: url("images/architect.jpg");
+}
+
 .big{
-  transform: scaleX(1.2);
-  transform: translate(1.5);
+  flex-grow: 4;
   transition: 0.5s ease;
 }
 
 .small{
-  transform: scaleX(0.8);
-  transform: translateX(1.5);
+  flex-shrink: 2;
   transition: 0.5s ease;
 }
