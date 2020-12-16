@@ -91,15 +91,21 @@ nav li a{
   justify-content: space-between;
 
 }
+
+.colmn{
+
+  margin: 10px;
+
+}
 .card{
+
   padding-bottom: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 1px solid #a47d20;
-  margin:  10px;
   height: 350px;
 }
 
-.card h5{
+.cards h5{
 
   font-family: 'Cinzel', serif;
   margin-top: -10px;
@@ -109,13 +115,17 @@ nav li a{
   font-size: 15px;
 }
 
-.card p{
+.cards p{
   color: white;
   text-align: left;
   padding: 10px;
 }
 
-
+.cardz h5{
+  color: black;
+  font-size: 30px;
+  text-align: left;
+}
 
 .suggestion{
   position: relative;
@@ -327,9 +337,12 @@ nav li a{
 
 .cardz{
   display: none;
+  padding: 8px;
+
 }
 .card1{
   background-color:#1d1e27;
+
 }
 .card2{
   background-color:#292a31;
@@ -338,22 +351,152 @@ nav li a{
   background-color:#42434a;
 }
 
+
 .cardz1{
-  background-image: url("images/ar2.jpg");
+  background-image: url("images/b1.jpg");
+  background-size: 100% 100%;
+
 }
+
 .cardz2{
-  background-image: url("images/ar3.jpg");
+  background-image: url("images/b2.jpg");
+  background-size: 100% 100%;
 }
 .cardz3{
-  background-image: url("images/architect.jpg");
+  background-image: url("images/b4.jpg");
+  background-size: 100% 100%;
 }
 
 .big{
-  flex-grow: 4;
-  transition: 0.5s ease;
+  flex-grow: 1;
+  transition: 0.2s ease;
+
 }
 
+
+
 .small{
-  flex-shrink: 2;
-  transition: 0.5s ease;
+  flex-shrink: 0;
+  width: 120px;
+  transition: 0.2s ease;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.modal-dialog{
+  position: absolute;
+  top: 15%;
+
+}
+.modal-content{
+
+  background-image: url("images/black6.jpg") !important;
+  background-size:100% 100%;
+  padding: 20px;
+  height: 500px;
+  opacity: 5;
+  box-sizing: content-box;
+  border-width: 8px;
+  border-style: solid;
+  border-image: linear-gradient(to right bottom, #260B3C, #a053df);
+  border-image-slice: 1;
+}
+
+
+
+.contactForm h2{
+  color: #98701d;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contactForm .formBox{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.contactForm .formBox .inputBox{
+  position: relative;
+  margin: 0 0 35px 0;
+}
+
+
+
+input,textarea{
+  background-color: transparent !important;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #6f6f6f !important;
+  border: none;
+  border-bottom: 1px solid #845a0b;
+  outline: none;
+  resize: none;
+
+}
+
+
+
+textarea{
+  min-height: 100px;
+}
+
+.inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 5px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #6f6f6f;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+input:focus ~ span, textarea:focus ~ span, input:valid ~ span, textarea:valid ~ span{
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #8e763b;
+}
+
+.inputBox button{
+  width: 140px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #bb974b;
+  color: #bb974b;
+  font-size: 20px;
+  background-color: #0b1924;
+}
+
+.inputBox button:hover{
+  width: 140px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #0b1924;
+  color: #0b1924;
+  font-size: 20px;
+  background-color: #8e702c;
+}
+
+.modal i{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 40px;
+  color: #98701d;
+}
+  @media only screen and (max-width:600px) {
+  .card_div{
+    max-width: 80%;
+  }
+
+  .card_holder{
+    display: block;
+  }
 }
