@@ -1,19 +1,22 @@
 <?php
   $message_sent = false;
-  if(($_POST['email']) && $_POST['email'] != ''){
-    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+  if(isset($_POST['email']) && $_POST['email'] != ''){
+    if(filter_var($_POST['name'], FILTER_VALIDATE_EMAIL)){
       //submit the form
       $userName = $_POST['name'];
       $userSName = $_POST['sname'];
+      $userEmail = $_POST['email'];
       $phoneNumber = $_POST['pno'];
       $message = $_POST['message'];
-
+      $messageSubject = "Ping from a client";
       $to = "zaharabhori@gmail.com";
       $body = "";
 
       $body .= "From: ".$userName. "\r\n";
       $body .= "Email: ".$userEmail. "\r\n";
       $body .= "Message: ".$message. "\r\n";
+
+      mail($to,$messageSubject,$body);
 
       $message_sent = true;
     }
@@ -22,6 +25,7 @@
     }
   }
  ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -189,38 +193,52 @@
       <div class="modal-dialog form-dark" role="document" >
         <div class="row modal-content">
           <div class="contactForm">
-            <h2>WRITE TO US</h2>
+            <h2>WRITE TO US!</h2>
             <i class="fa fa-close" data-dismiss="modal"></i>
-            <div class=" formBox">
-              <form  method="post" action=”mailto:zaharabhori@gmail.com” enctype=”multipart/form-data” name=”EmailTestForm”>
 
-              <div class="inputBox col-md-6">
-                <input type="text" name="" required>
+            <?php
+              if($message_sent):
+              ?>
+
+              <h3>Thanks!</h3>
+
+              <?php
+              else:
+              ?>
+            <div class=" formBox">
+              
+              <form  method="post" action=”home.php”>
+
+              <div class="inputBox form-group col-md-6">
+                <input type="text" class="form-control" name="name" required>
                 <span>First Name</span>
               </div>
-              <div class="inputBox col-md-6">
-                <input type="text" name="" required>
+              <div class="inputBox form-group col-md-6">
+                <input class="<?= $invalid_class_name ?? "" ?> form-control" type="text" name="sname" required>
                 <span>Last Name</span>
               </div>
-              <div class="inputBox col-md-6">
-                <input type="text" name="" required>
+              <div class="inputBox form-group col-md-6">
+                <input type="text" class="form-control" name="email" required>
                 <span>Email address</span>
               </div>
-              <div class="inputBox col-md-6">
-                <input type="text" name="" required>
+              <div class="inputBox form-group col-md-6">
+                <input type="text" class="form-control" name="pno" required>
                 <span>Mobile Number</span>
               </div>
-              <div class="inputBox col-md-12">
-                <textarea name="" required></textarea>
+              <div class="inputBox form-group col-md-12">
+                <textarea name="message" class="form-control" required></textarea>
                 <span>Write your message here</span>
               </div>
               <div class="inputBox col-md-12 text-center">
-                <button type="button" >Send</button>
+                <button type="submit" >Send</button>
               </div>
             </div>
           </form>
 
           </div>
+          <?php
+          endif;
+          ?>
       </div>
     </div>
   </div>
