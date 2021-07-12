@@ -37,6 +37,11 @@ nav li{
   width: 100%;
 }
 
+
+#menu_bttn:focus{
+  background-color: transparent !important;
+  border: 0;
+}
 nav li a{
   color: #b78612 !important;
   font-family: 'Alegreya Sans', sans-serif;
@@ -185,8 +190,8 @@ nav li a{
 .aboutus{
   position: relative;
   max-width: 90%;
-  margin-top: 80px;
   z-index: -1;
+  padding-top: 100px;
 }
 
 .aboutus h1{
@@ -221,14 +226,47 @@ nav li a{
   margin-left: 100px;
   margin-top: -300px;
 }
+
+.patrons{
+  position: relative;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: white;
+
+}
+
+.patrons h1{
+  font-size: 45px;
+  color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+  background-color: #a47d20;
+  height: 100px;
+  padding-top: 20px;
+}
+
+.logos{
+  padding:10px;
+  text-align: center;
+}
+.patrons img{
+  padding: 15px;
+  height: 80px;
+  width: 140px;
+  text-align: center;
+}
+
+
+
 .filler{
   position: relative;
-  height: 150px;
+  height: auto;
   background-image: url("images/landing4.jpg");
   background-size:100% 200%;
   background-position: center;
   z-index: -1;
   margin-top: 40px;
+  padding-bottom: 10px;
 }
 
 .filler:before{
@@ -242,17 +280,19 @@ nav li a{
 .projects{
   position: relative;
   max-width: 80%;
-  margin-top:70px;
-
+  padding-top: 110px;
 }
 
 .row {
+  display: -ms-flexbox; /* IE10 */
   display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
+  -ms-flex: 33%; /* IE10 */
   flex: 33%;
   max-width: 33%;
 }
@@ -260,6 +300,23 @@ nav li a{
 .column img {
   vertical-align: middle;
   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 .title_div{
@@ -281,7 +338,7 @@ nav li a{
 
 .footer{
   position: relative;
-  height: 150px;
+  height: auto;
   background-image: url("images/landing4.jpg");
   background-size:100% 250%;
   background-position: center;
@@ -308,12 +365,17 @@ nav li a{
   color: white;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 25px;
+
 }
 
 .footer p{
   color: white;
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 35px;
+}
+
+.footer i{
+  color: color: white !important;
 }
 
 
@@ -385,7 +447,7 @@ nav li a{
 
 .modal-dialog{
   position: absolute;
-  top: 15%;
+  top: 10%;
 
 }
 .modal-content{
@@ -439,6 +501,9 @@ input,textarea{
 
 }
 
+.inputBox{
+  background-color: transparent !important;
+}
 
 
 textarea{
@@ -456,12 +521,20 @@ textarea{
   pointer-events: none;
 }
 
-input:focus ~ span, textarea:focus ~ span, input:valid ~ span, textarea:valid ~ span{
+input:focus ~ span, textarea:focus ~ span{
   transform: translateY(-20px);
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
   color: #8e763b;
+}
+input:valid ~ span, textarea:valid ~ span{
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #8e763b;
+
 }
 
 .inputBox button{
@@ -491,12 +564,256 @@ input:focus ~ span, textarea:focus ~ span, input:valid ~ span, textarea:valid ~ 
   margin: 40px;
   color: #98701d;
 }
+
   @media only screen and (max-width:600px) {
+
+  .landing{
+    background-size: 140% 100%;
+  }
+
+  .landing h1{
+    font-size: 40px;
+  }
+
+  #menu{
+      position: absolute;
+      width: 100%;
+      background-color:rgba(0,0,0,0.5) ;
+      z-index: -1;
+      text-align: center;
+      margin-top: -5px;
+    }
+    #menu ul{
+      margin-top:-25px;
+      height: 200px;
+    }
+
+    #menu.scrolled{
+      background-color: #373942 !important;
+    }
+
+    nav.navbar{
+      height: 80px;
+    }
+
   .card_div{
-    max-width: 80%;
+    top: -40px;
+    max-width: 100%;
   }
 
   .card_holder{
     display: block;
   }
+
+  .cards{
+    display: flex;
+    height: auto;
+  }
+
+
+  .card h5{
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .cards p{
+
+    display: none;
+  }
+
+
+  #arrow{
+    width: 30px;
+    height: 30px;
+  }
+
+  .big{
+    flex-grow: 0;
+
+  }
+
+  .small{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .ar img{
+    width: 100%;
+    height:120%;
+  }
+
+  .division{
+    margin-top: -180px;
+    height: 80px;
+    width: 80%;
+    text-align: left;
+  }
+
+  .ping{
+    text-align: center;
+    margin-left: 0px;
+    margin-top:80px;
+  }
+
+  .ping p{
+    margin-top: -10px;
+    font-size: 15px;
+  }
+  .ping h1{
+    font-size: 25px;
+  }
+
+
+  .ping button{
+
+    height: 30px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px;
+
+  }
+
+  .aboutus{
+    max-width: 100%;
+    margin-top: 80px;
+    padding-top: 0px !important;
+  }
+
+  .aboutus h1{
+    margin-top: 10%;
+    font-size: 50px;
+
+  }
+
+  .aboutus p{
+    font-size: 15px;
+  }
+
+  .frames{
+    position: absolute;
+    margin-top: -30px;
+  }
+  .image1{
+    width: 140px;
+    height: 120px;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-bottom: 5px;
+  }
+
+  .image2{
+    width: 140px;
+    height: 120px;
+    margin-left: -50px;
+
+
+  }
+
+  .frame{
+    width: 140px;
+    height: 230px;
+    margin-left: 30px;
+    margin-top: -200px;
+  }
+
+  .patrons{
+    position: relative;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: white;
+
+  }
+
+  .patrons h1{
+    font-size: 35px;
+
+    height: 100px;
+    padding-top: 20px;
+  }
+
+  .logos{
+    padding:10px;
+  }
+  .patrons img{
+    padding: 15px;
+    height: 50px;
+    width: 100px;
+  }
+
+  .patron_logos{
+    margin-top: 20px;
+  }
+
+
+  .filler h4{
+    font-size: 20px;
+    margin: 10px;
+  }
+
+
+
+  .footerheading{
+    margin-top: 10px;
+    font-size: 25px;
+    margin-bottom: -8px;
+  }
+
+  .footer a{
+    font-size: 17px;
+    margin: 5px;
+
+  }
+
+  .footer p{
+    font-size: 30px;
+    margin-top: 12px;
+  }
+
+  .modal{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .modal-content{
+    background-position: -80px left;
+    background-size:120% 100%;
+    height: auto;
+    opacity: 5;
+  }
+
+  .contactForm .formBox .inputBox{
+    position: relative;
+    margin: 0 0 20px 0;
+  }
+
+  .contactForm h2{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: -10px;
+
+  }
+
+  .inputBox span{
+
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+
+  .inputBox button{
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .inputBox Button:hover{
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .modal i{
+    margin: 25px;
+  }
+
 }
